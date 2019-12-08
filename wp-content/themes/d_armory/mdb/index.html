@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="view">
+    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(28).jpg" class="img-fluid" alt="">
+    <div class="mask pattern-1">
+       
+    </div>
+</div>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+		
+                        	<i class="fa fa-user"></i>
+            <h1 class="wow fadeInRight">Material Design for Bootstrap</h1>
+
+            <h5 class="wow fadeInLeft">Thank you for using our product. We're glad you're with us.</h5>
+
+            <p class="animated fadeIn text-muted">MDB Team</p>
+        </div>
+    </div>
+	
+    <!-- /Start your project here-->
+<canvas id="myChart"></canvas>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+	<script type="text/javascript">
+		 new WOW().init();
+		var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.5)",
+            strokeColor: "rgba(151,187,205,0.8)",
+            highlightFill: "rgba(151,187,205,0.75)",
+            highlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+        }
+    ]
+};
+		var option = {
+		responsive: true,
+		};
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myBarChart = new Chart(ctx).Bar(data, option);
+	</script>
+</body>
+
+</html>

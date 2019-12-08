@@ -1,0 +1,342 @@
+@charset "utf-8";
+/*
+Theme Name: GM Design for D Armory Guns & Ammo
+Author: Gavs Matterig
+Version: 1.0
+*/
+
+body{
+	margin:0px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	background:#F4F4F4;
+	background:url(images/dark_exa.png) fixed;
+}
+
+#top-content{
+	position:fixed;
+	height:60px;
+	background:#272727;
+	width:100%;
+	z-index:1;
+}
+.home-special-template{
+	margin-top:60px;	
+}
+#myCarousel, .pages-template{
+	position:relative;
+	top:60px;
+	margin-bottom:60px;	
+}
+#the-logo{
+	background:url(images/logo.png) no-repeat;
+	background-size:contain;
+	height:100%;
+	width:35%;
+	color:#9eaa94;
+	text-align:center;
+}
+
+#menu-main-menu{
+    margin: 0;
+    padding: 0;
+}
+
+#menu-main-menu li{
+	font-size:12px;
+	display:inline-block;
+	height:100%;
+}
+#menu-main-menu li.current-menu-item{
+	border-bottom:3px solid #92B7C3;
+}
+
+#menu-main-menu li a{
+	color:#DBDBDB;
+	padding:0px 15px;
+	display:block;
+	height:100%;
+	line-height:60px;
+	text-decoration:none;
+}
+#menu-main-menu li a:hover{
+	color:#9A9A9A;
+	background:#363636;
+}
+
+#menu-main-menu li .sub-menu{
+	position:absolute;
+	z-index:1;
+	display:none;
+	padding:0;
+}
+#menu-main-menu li .sub-menu li{
+	background:#272727;
+	display:list-item;
+	list-style:none;
+}
+#menu-main-menu li .sub-menu li a{
+	text-align:left;
+	padding:0px 20px;
+	height:100%;
+	width:200px;
+}
+#menu-main-menu li .sub-menu li a{
+	border-radius:5px;
+}
+#menu-main-menu li .sub-menu li:last-child{
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.menu-item-has-children > a:after{
+	content: ' v ';
+	font-size:10px;
+}
+
+#mainNav{
+	float:right;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+
+#the-banner{
+	margin-top:30px;
+}
+#the-event-banner img{
+	width:100%;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5);
+}
+#the-event-details{
+	color:#FFF;
+	text-indent:5%;
+	text-align:justify;
+	font-size:16px;	
+}
+#the-event-details-buttons{
+	display:block;
+	margin:0px auto;
+	text-align:center;
+	text-indent:0;
+}
+
+#header-banner{
+	background:url(images/banner1.jpg) center center no-repeat fixed;
+	background-size:cover;
+	height:300px;	
+}
+
+.gm-hr-style1{ 
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(73, 73, 73, 0.3);
+}
+.gm-hr-style2{ 
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(73, 73, 73, 0.6);
+}
+.gm-hr-style3{
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));	
+}
+.btn, .carousel-indicators{
+	z-index:0;	
+}
+footer.page-footer{
+	background:#494949;
+	background-color:#272727;
+	margin-top:0;	
+}
+
+.gm-h2-style1{
+	color:#DDDDDD;	
+}
+.gm-h4-style1{
+	color:#DDDDDD;
+	font-style:italic;	
+}
+#event-registration input{
+	color:#DDDDDD;	
+}
+.checkbox label{
+	color:#FFF;
+	font-size:15px;	
+}
+.gm_label{
+	color:#FFF;
+	font-size:16px;	
+}
+#tourist-spot{
+	background:#FFF;
+	min-height:300px;
+	margin:30px 0px 0px 0px;
+	color:#393939;
+	padding:20px 0px;
+}
+#tourist-spot .gm-h2-style1{
+	color:#3F3F3F;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+#gallery_select{
+	margin:20px auto;	
+}
+#gallery_select .carousel-control{
+	background-image:none;
+}
+#gallery_select img{
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5);	
+}
+#gallery_select .item span{
+	font-weight:bold;
+	text-align:center;
+}
+#hotel-icon img{
+	height:250px;	
+}
+#hotel-icon{
+	margin:5px auto;	
+}
+#hotels{
+	color:#FFF;
+	background:rgba(0,0,0,0.5);
+	border-radius:10px;
+	padding:10px;
+}
+#hotel-details{
+	font-size:16px;
+}
+input::-webkit-input-placeholder {
+color: blue !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: blue !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: blue !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: blue !important;  
+}
+textarea::-webkit-input-placeholder {
+color: blue !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: blue !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: blue !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: blue !important;  
+}
+.bg-success{
+	background:#CAF1C0;
+	border:1px solid #004B0D;
+	border-radius:5px;
+	padding:5px 15px;
+	display:none;
+}
+.bg-danger{
+	border:1px solid #5C0000;
+	border-radius:5px;
+	padding:5px 15px;
+	display:none;
+}
+#stage_summary_table{
+	text-align:center;
+	color:#FFF;	
+}
+#stage_summary_table th{
+	text-align:center;
+}
+#registration_approval_table{
+	font-size:12px;
+	color: #FFF;
+}
+#contact-us{
+	color:#FFF;	
+}
+.post-password-form{
+	color:#FFF;	
+}
+.reg_procedure{
+	color:#FFF;	
+}
+#loader-wrapper{
+	background:url(images/preloader.gif) center center no-repeat, #252525;
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:1001;
+}
+
+#event_photo_slider_wrap{
+	margin:20px auto;	
+}
+
+/*Extra small devices Phones (<768px)*/
+@media screen and (min-width: 768px) {
+
+}
+/*Small devices Tablets (>768px)*/
+@media screen and (max-width: 768px) {
+#top-content{
+	height:50px;	
+}
+#menu-main-menu{
+	position:absolute;
+	z-index:5;
+	width:100%;
+	background:#272727;
+}
+#menu-main-menu li{
+	width:100%;
+	height:50px;
+}
+#mainNav{
+	width:100%;
+	padding:0;
+}
+#menu-main-menu li .sub-menu{
+	background:#272727;
+	width:80%;
+	margin-left:50px;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5);
+}
+#menu-main-menu li .sub-menu li a{
+	width:100%;
+}
+#the-logo{
+	width:50%;
+}
+#header-banner{
+	background:url(images/banner1.jpg) center center no-repeat fixed;
+	background-size:cover;
+	height:150px;	
+}
+
+}
+/*Medium devices Desktops (>992px)*/
+@media screen and (max-width: 992px) {
+
+}
+/*Large devices Desktops (>1200px)*/
+@media screen and (max-width: 1200px) {
+	
+}

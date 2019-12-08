@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+#product-management-mnu{
+	border-radius:5px;
+	background:#4177E3;
+    padding: 0;
+    display:table;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;	
+}
+#product-management-mnu li{
+	text-align:center;
+    display:table-cell;
+	padding:5px 10px;
+}
+#product-management-mnu li a{
+	color:#FFF;
+	display:block;
+	padding:5px;
+}
+#product-management-mnu li a:hover{
+	background:#85A5E5;
+	border-radius:5px;
+}
+#product-management-mnu li.active a{
+	background:#85A5E5;
+	border-radius:5px;
+}
+#edit_prod_form textarea, #add_new_product textarea{
+	color:#FFF;
+	text-indent:5px;
+}
+#edit_prod_form select, #add_new_product select{
+	padding:10px;
+	height:50px;
+}
+#edit_prod_form submit, #add_new_product submit{
+		
+}
+#search_prod{
+	font-size:12px;	
+}
+#our-products{
+	padding:20px;
+	background:#FFF;
+}
+.prod-kind{
+	border-radius:10px;
+	margin:10px auto;
+	border:thin solid #989898;
+}
+#prod-firearm{
+	background:url(../icons/guns.png) no-repeat center center;
+	background-size:contain;
+	height:200px;
+}
+#prod-ammo{
+	background:url(../icons/ammo.png) no-repeat center center;
+	background-size:contain;
+	height:200px;
+}
+#prod-accessories{
+	background:url(../icons/accessories.png) no-repeat center center;
+	background-size:contain;
+	height:200px;
+}
+#prod-spareparts{
+	background:url(../icons/spare-parts.png) no-repeat center center;
+	background-size:contain;
+	height:200px;
+}
+.prod-kind-label{
+	text-align:center;
+	font-weight:bold;
+	color:#424242;
+	font-size:16px;
+}
+#our-products .container .col-md-3{
+	cursor:pointer;
+    transition: all 0.2s ease;
+}
+#our-products .container .col-md-3:hover{
+	-webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+}
+@media screen and (max-width: 768px) {
+#product-management-mnu{
+	border-radius:5px;
+	background:#4177E3;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;	
+}
+#product-management-mnu li{
+	text-align:center;
+	display:list-item;
+	padding:5px 10px;
+}
+#product-management-mnu li a{
+	color:#FFF;
+	display:block;
+	padding:5px;
+}
+#product-management-mnu li a:hover{
+	background:#85A5E5;
+	border-radius:5px;
+}
+#product-management-mnu li.active{
+	background:#85A5E5;
+}	
+}
